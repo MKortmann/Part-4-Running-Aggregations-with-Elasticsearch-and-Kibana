@@ -524,7 +524,7 @@ GET ecommerce_data/_search
   "aggs": {
     "transactions_by_8_hrs": {
       "date_histogram": {
-        "field": "InvoiceDate",
+        "field": "{InvoiceDate}",
         "fixed_interval": "8h"
       }
     }
